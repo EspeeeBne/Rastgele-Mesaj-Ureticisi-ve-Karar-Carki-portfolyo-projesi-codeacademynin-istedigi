@@ -1,0 +1,165 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(to bottom, #0099ff, #33ccff);
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    flex-direction: column;
+}
+
+.container {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    transition: box-shadow 0.3s ease-in-out;
+    text-align: center;
+}
+
+.container:hover {
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.3);
+}
+
+h1 {
+    color: #444;
+    font-weight: bold;
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+}
+
+h2 {
+    color: #555;
+    font-size: 1.8em;
+    margin-top: 30px;
+    border-bottom: 2px solid #0099ff;
+    display: inline-block;
+    padding-bottom: 5px;
+}
+
+.menu {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 30px;
+}
+
+button {
+    padding: 15px 25px;
+    font-size: 1.2em;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    background: #0099ff;
+    color: #fff;
+    transition: background 0.3s, transform 0.2s;
+}
+
+button:hover {
+    background: #33ccff;
+    transform: translateY(-3px);
+}
+
+button:active {
+    transform: translateY(2px);
+}
+
+.tab-content {
+    display: none;
+    padding: 20px;
+    border: 2px solid #0099ff;
+    border-radius: 10px;
+    margin-top: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background: #f9f9f9;
+    animation: fadeIn 0.5s ease-in-out;
+}
+
+.tab-content.active {
+    display: block;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.number-input {
+    padding: 10px;
+    font-size: 1.1em;
+    width: 40%;
+    margin-bottom: 10px;
+    border: 2px solid #0099ff;
+    border-radius: 5px;
+}
+
+.number-input-wrapper {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+    width: 100%;
+}
+
+#numberTab label {
+    display: block;
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+#generateNumberButton {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #0099ff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#generateNumberButton:hover {
+    background-color: #0056b3;
+}
+
+input[type="text"] {
+    padding: 10px;
+    font-size: 1.1em;
+    width: calc(100% - 25px);
+    margin-top: 10px;
+    border: 2px solid #0099ff;
+    border-radius: 5px;
+}
+
+footer {
+    width: 100%;
+    padding: 10px;
+    text-align: center;
+    color: #fff;
+    font-size: 0.9em;
+    background: rgba(0, 0, 0, 0.5);
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.1);
+    position: fixed;
+    bottom: 0;
+}
+
+footer a {
+    color: #0099ff;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
